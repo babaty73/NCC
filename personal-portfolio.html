@@ -1,70 +1,110 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body style="display: flex; flex-direction: column; align-items: center; font-family: Arial, sans-serif; gap: 6px;">
-   <div style="display: flex; flex-direction: column; text-align: center;">
-     <img src="mine.jpg" alt="pic"style = "width:200px; margin-left:80px"  >
-  <br><br>
-    <h1>Hi, I'm Imran Endris</h1>
-    <p>i'm a <strong>website developer </strong>and a <i>civil Engineer</i><br>
-    student in ASTU i love solving problems <br>
-    if you have problems related to website and<br>
-    want them to be solved feel free to
-    contact me <a href="https://portfolio-nine-nu-33.vercel.app">here</a></p>
-    <a href="#bottom">Go to bottom</a>
-     </div>
-     <hr>
-     <div style="display: flex; justify-content: space-between; align-items: flex-start; border: 2px solid black; padding: 10px; margin: 20px; gap: 20px;">
-            <div style="flex: 1; min-width: 200px;">
-                <h2>My life</h2>
-                <ul>
-                    <li>Eat</li>
-                    <li>Code</li>
-                    <li>Pray</li>
-                    <li>Repeat</li>
-                </ul>
-            </div>
-            <div style="flex: 1; min-width: 200px;">
-                <h2>My Skills</h2>
-                <ol>
-                    <li>C++</li>
-                    <li>Python</li>
-                    <li>Web developing</li>
-                </ol>
-            </div>
-     </div>
-    <table border="1">
-         <tr>
-           <th>Course Name</th>
-           <th>Year-Semester</th>
-           <th>Grade</th>
-       </tr>
-       <tr>
-           <td>Python</td>
-           <td>1st-1</td>
-           <td>A</td>
-       </tr>
-       <tr>
-              <td>C++</td>
-              <td>1st-1</td>
-              <td>A</td>    
-       </tr>
-    </table><br><br>
-       <form>
-        Name:<br>
-        <input type="text" placeholder="Your Name"><br>
-        Email:<br>
-        <input type="email" placeholder="Your Email"><br>
-        Message:<br>
-        <textarea placeholder="Message"></textarea>
-    </form><br>
-    <button>submit</button>
+<body>
+
+<nav>
+    <a href="#about">About Me</a>
+    <a href="#profile">Profile</a>
+    <a href="#contact-me">Contact-Me</a>
+</nav>
+
+<h1 id="profile">Hi, I'm Imran Endris</h1>
+
+<div class="about" id="about">
+    <img src="mine.jpg" alt="Profile Picture" >
+    <p>
+        I'm a <strong>website developer</strong> and a <i>civil Engineer</i><br>
+        student in ASTU. I love solving problems.<br>
+        If you have problems related to websites and want them solved,
+        feel free to contact me 
+        <a href="https://imran-idris.vercel.app">here</a>.
+    </p>
+</div>
+
+<hr>
+
+<div class="grid-section">
     
-    <a id="bottom" href="https://portfolio-nine-nu-33.vercel.app"><img src="mine.jpg" alt="Profile Picture" border="3" width="200px"></a>
-    if you want to create cool websites like mine or this one watch this video below
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/UB1O30fR-EE?si=e3RvWNYBjna1XG35" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div>
+        <h2>My Life</h2>
+        <ul>
+            <li>Eat</li>
+            <li>Pray</li>
+            <li>Code</li>
+            <li>Repeat</li>
+        </ul>
+    </div>
+
+    <div>
+        <h2>My Skills</h2>
+        <ol>
+            <li>C++</li>
+            <li>Python</li>
+            <li>Web Development</li>
+        </ol>
+    </div>
+
+</div>
+
+<table>
+    <tr>
+        <th>Course Name</th>
+        <th>Year-Semester</th>
+        <th>Grade</th>
+        <th>Credits</th>
+    </tr>
+    <tr>
+        <td>Python</td>
+        <td>1st-1</td>
+        <td>A</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>C++</td>
+        <td>1st-1</td>
+        <td>A</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>Web Development</td>
+        <td>1st-1</td>
+        <td>A</td>
+        <td>3</td>
+    </tr>
+</table>
+<h1 id="contact-me" >Get in Touch</h1>
+<form >
+    <label>Name:</label><br>
+    <input type="text" placeholder="Your Name"><br>
+
+    <label>Email:</label><br>
+    <input type="email" placeholder="Your Email"><br>
+
+    <label>Message:</label><br>
+    <textarea placeholder="Your Message"></textarea><br>
+    <input type="submit" value="Submit" class="button">
+</form>
+
+<a id="bottom" href="https://portfolio-nine-nu-33.vercel.app">
+    <img src="mine.jpg" alt="Profile Picture" class="im">
+</a>
+
+<p style="margin: 0 auto; font-family : Arial, sans-serif; text-align: center; padding: 20px;">
+    If you want to create cool websites like mine or this one, watch this video below:
+</p>
+
+<iframe
+    src="https://www.youtube.com/embed/UB1O30fR-EE" 
+    title="YouTube video player" 
+    allowfullscreen>
+</iframe>
+</div>
+</body>
 </html>
