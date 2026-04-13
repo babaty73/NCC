@@ -142,4 +142,40 @@ iframe{
     width: 550px;
     height: 350px;
 }
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+    }
+
+    img {
+        width: 50%;
+    }
+    .im{
+        margin-left: 25%;
+        width: 50%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-section {
+        grid-template-columns: 1fr;
+    }
+
+    input, textarea, button {
+        width: 100%;
+    }
+
+    body {
+        padding: 0.5rem;
+    }
+}
 
